@@ -1,0 +1,84 @@
+{
+    "easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [{
+            "path": "pages/auth/login",
+            "style": {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/home/index",
+            "style": {
+                "navigationBarTitleText": "首页"
+            }
+        },
+        {
+            "path": "pages/focus/index",
+            "style": {
+                "navigationBarTitleText": "关注"
+            }
+        },
+        {
+            "path": "pages/message/index",
+            "style": {
+                "navigationBarTitleText": "消息"
+            }
+        },
+        {
+            "path": "pages/user/index",
+            "style": {
+                "navigationBarTitleText": "我的"
+            }
+        }
+    ],
+    "subPackages": [{
+        "root": "order-modules",
+        "pages": [{
+            "path": "detail/index",
+            "style": {
+                "navigationBarTitleText": "询价单详情",
+                "enablePullDownRefresh": false
+            }
+        }]
+    }],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "vue2+ts-测试demo",
+        "navigationBarBackgroundColor": "#2F85FC",
+        "backgroundColor": "#ffffff"
+    },
+    "tabBar": {
+        "borderStyle": "black",
+        "backgroundColor": "#333",
+        "color": "#8F8F94",
+        "selectedColor": "#f33e54",
+        "list": [{
+                "pagePath": "pages/home/index",
+                "iconPath": "static/tabbar/home.png",
+                "selectedIconPath": "static/tabbar/homeactive.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/focus/index",
+                "iconPath": "static/tabbar/guanzhu.png",
+                "selectedIconPath": "static/tabbar/guanzhuactive.png",
+                "text": "关注"
+            },
+            {
+                "pagePath": "pages/message/index",
+                "iconPath": "static/tabbar/news.png",
+                "selectedIconPath": "static/tabbar/newsactive.png",
+                "text": "消息"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "iconPath": "static/tabbar/me.png",
+                "selectedIconPath": "static/tabbar/meactive.png",
+                "text": "我"
+            }
+        ]
+    }
+}
